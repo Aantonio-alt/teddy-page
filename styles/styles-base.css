@@ -1,0 +1,343 @@
+/*
+body {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* hecho
+.header {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(255, 145, 49);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    overflow-x: hidden; 
+}
+
+.header__icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px auto 0px auto;
+    width: 40%;
+}
+
+.header__img--menu{
+    width: 4em;
+    padding: 0 0 0 0;
+}
+.header__img--carrito {
+    width: 4em;
+    padding: 0 0 0 0;
+}
+
+.header__img--logo{
+    width: 5em;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main__banner {
+    width: 100%;
+    padding: 40px 0px;
+    margin: 0 0 5em 0;
+    text-align: center;
+    background-image: url(https://img.freepik.com/foto-gratis/textura-juguete-esponjoso-cerca_23-2149686927.jpg?t=st=1727626512~exp=1727630112~hmac=dc84f51ba92acfe6691fe478fbc190e6e30c0440e095cdf65e22d25dd3c03d18&w=1800);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    color: rgb(0, 0, 0);
+}
+
+.main__title {
+    font-weight: 600px;
+    font-size: 60px;
+    margin: 10px;
+    color: #ffffff;
+    text-shadow:  
+    2px 2px 0 rgb(0, 0, 0),
+    -2px 2px 0 rgb(0, 0, 0),
+    2px -2px 0 rgb(0, 0, 0),
+    -2px -2px 0 rgb(0, 0, 0);    
+}
+
+.main__text {
+    margin: 0 auto;
+    font-size: 3em;
+    text-shadow:  
+    1px 1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px -1px 0 rgb(255, 255, 255);   
+}
+
+.productos {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 10rem 8rem 10rem ;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.productos__item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.productos__img {
+    width: 10em;
+    margin-bottom: 15px;
+}
+
+.productos__name {
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.productos__precio {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.cart {
+    width: 500px;
+    background-color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+}
+
+.cart__titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.cart__item {
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.cart__img {
+    width: 60px;
+}
+
+.cart__name {
+    font-weight: 500;
+    color: black;
+}
+
+.cart__precio {
+    font-weight: 500;
+    color: black;
+}
+
+.cart__icon {
+    width: 20px;
+    cursor: pointer;
+}
+
+.cart__icon--delete {
+    width: 20px;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #422912;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    box-sizing: border-box;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px;
+
+}
+
+.footer__about {
+    grid-column: 1 / 4; 
+    text-align: center;
+}
+
+.footer__links, .footer__contact, .footer__social {
+    grid-column: span 1; 
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.footer__text {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+
+}
+.footer__item{
+    margin-bottom: .8rem;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__icon {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__icon:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+    .header {
+    
+        padding: auto;
+        text-align: center;
+        
+    }
+
+    .header__icon {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: auto;
+    }
+
+    .productos__img {
+        width: 150px;
+    }
+
+    .cart {
+        width: 100%;
+        top: 80px;
+    }
+    .footer {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto;
+    }
+
+    .footer__about {
+        grid-column: 1 / 2; 
+    }
+
+    .footer__links,
+    .footer__contact,
+    .footer__social {
+        grid-column: 1 / 2; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header__icon{
+        width: 40%;
+    }
+    .main__banner {
+        padding: 30px 0;
+    }
+
+    .main__title {
+        font-size: 4rem;
+    }
+
+    .main__text {
+        font-size: 2rem;
+    }
+
+    .productos {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .productos__img {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .productos__name,
+    .productos__precio {
+        padding: 0 10px;
+    }
+
+    .cart {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .cart__titulo {
+        padding: 15px 0;
+    }
+
+    .cart__item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart__img {
+        width: 100px;
+    }
+
+    .cart__precio {
+        margin: 0;
+    }
+}
+*/ 
